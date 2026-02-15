@@ -77,7 +77,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "50vh",
     backgroundColor: "#f4f4f4",
   },
   form: {
@@ -99,6 +98,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   button: {
     width: "100%",
+    height: "50px",
     padding: "0.7rem",
     backgroundColor: "#007bff",
     color: "#fff",
