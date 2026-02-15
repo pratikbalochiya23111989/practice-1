@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Auth from "./components/Auth";
 import "./App.css";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
 
   return (
     <>
+      <Auth/>
       <div style={{ backgroundColor: color, height: 200, width: "100%" }}></div>
       <br />
       <button
