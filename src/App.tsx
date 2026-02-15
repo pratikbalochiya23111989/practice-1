@@ -4,6 +4,8 @@ import Auth from "./components/Auth";
 import BGColor from "./components/BGColor";
 import ToDo from "./components/ToDo";
 import Theme from "./components/Theme";
+import CounterWithUndo from "./components/CounterWithUndo";
+
 import "./App.css";
 
 function App() {
@@ -56,6 +58,17 @@ function App() {
         >
           Theme
         </button>
+
+        <button
+          onClick={() => setActiveTab("tab5")}
+          className={`px-4 py-2 font-medium ${
+            activeTab === "tab5"
+              ? "border-b-2 border-blue-500 text-blue-600"
+              : "text-gray-500 hover:text-blue-500"
+          } ${activeTab === "tab5" ? "selectedButton" : ""}`}
+        >
+          Counter
+        </button>
       </div>
 
       {/* Tab Content */}
@@ -64,6 +77,7 @@ function App() {
         {activeTab === "tab2" && <div><BGColor/></div>}
         {activeTab === "tab3" && <div><ToDo/></div>}
         {activeTab === "tab4" && <div><Theme/></div>}
+        {activeTab === "tab5" && <div><CounterWithUndo/></div>}
       </div>
     </div>
   );
