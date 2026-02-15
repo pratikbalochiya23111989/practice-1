@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.selectedButton{
+  background-color: lightgray;
+}
+
+button{
+  width: 250px;
+  height: 80px;
+  border: 2px solid #000;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
